@@ -43,6 +43,6 @@ void loop() {
 ```
 #### Reflection:
 > This assignemnt was very productive as it allowed for the introduction of new things with the incorporation of old things.  With that being said, some takaways...
-- Set LCD to correct brightness so that it looks clean when displayed.
-- Post projects, don't waste time on making wiring diagrams find someone elses.
+> - Set LCD to correct brightness so that it looks clean when displayed.
+> - Post projects, don't waste time on making wiring diagrams find someone elses.
 > All in all I enjoyed this assignment and look forward to more like it in the future.
