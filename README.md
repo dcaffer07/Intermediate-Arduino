@@ -1,5 +1,9 @@
 # Intermediate-Arduino
-## LCD Backpack
+### Table of Contents
+[LCD Backpack](https://github.com/dcaffer07/Intermediate-Arduino/blob/main/README.md#intermediate-arduino)
+
+
+### LCD Backpack
 #### Description:
 > Fist, dsiplay "Hello World" on a Liquid Crystal.  Next add additioanl wiring and a button display a counter which increaases as a button is clicked, showing the amount of clicks.  This assigment will further develop and expand our knowledge and increase our capability in arduino.
 #### Wriring 
