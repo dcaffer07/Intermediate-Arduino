@@ -51,3 +51,5 @@ void loop() {
 > - Post projects, don't waste time on making wiring diagrams find someone elses.
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
+
+https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png
