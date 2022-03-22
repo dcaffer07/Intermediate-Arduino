@@ -53,11 +53,11 @@ void loop() {
 > All in all I enjoyed this assignment and look forward to more like it in the future.
 
 
-### LCD Backpack
+### Photointerrupters
 #### Description:
-> Fist, dsiplay "Hello World" on a Liquid Crystal.  Next add additioanl wiring and a button display a counter which increaases as a button is clicked, showing the amount of clicks.  This assigment will further develop and expand our knowledge and increase our capability in arduino.
+> Fist, make an LED turn on when an object is put between the legs of the photointerupter.  Next, add a counter to the serial moniter so that it tells you the number of times that the LED has been turned on.  Overall we want to expand our coding knowledge and futher our skills.
 #### Wriring 
-> Very straight forward, simply connect the photointerupye.
+> Very straight forward, simply connect the photointerupter to an LED so that a light is initialized with an interuption.
 <img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png" alt="wiring2" style="width:450px;">
 
 Image credit goes to [Physicalcomputing.com](https://uwearduino.wordpress.com/2018/02/13/photo-interrupt-sensor-module-week-1/)
@@ -96,7 +96,8 @@ void Read() {
 ```
 #### Reflection:
 > This assignemnt was very productive as it allowed for the introduction of new things with the incorporation of old things.  With that being said, some takaways...
-> - Set LCD to correct brightness so that it looks clean when displayed.
-> - Post projects, don't waste time on making wiring diagrams find someone elses.
+> - Read directions so that you know what to do for the assignemnt.  I found that to be very helpfull.
+> - Don't add unnessecary delays because they are stupid and unhelpful.
+> - Make sure that code is written periodically and make sure that pins are connectred to the correct places.
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
