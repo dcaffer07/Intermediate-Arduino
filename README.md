@@ -66,26 +66,32 @@ Image credit goes to [Physicalcomputing.com](https://uwearduino.wordpress.com/20
 
 ```C++
  
-int Led = 12;
-int photo = 4;
-int photostate = 0;
+int Led = 8;
+int photo = 2;
 int val;
+int photostate = 0;
 volatile byte state = LOW;
+int counter = 0; //variables
 
 void setup() {
-  pinMode(Led, OUTPUT);
-  pinMode(photo, INPUT_PULLUP);    //discver pins for outputing/inputting
-  Serial.begin(9600);           //attach serial moter
-  attachInterrupt(digitalPinToInterrupt(photo), Read, CHANGE);   //disrupts.  causing LED to initiate
+  pinMode(Led, OUTPUT); //set led as output
+  pinMode(photo, INPUT_PULLUP);    //output/input pins
+  Serial.begin(9600);           //links serial monitor
+  attachInterrupt(digitalPinToInterrupt(photo), Read, CHANGE);   //interrupts photo pin, makes state unequal which turns LED on
 }
 
 void loop() {
+  digitalWrite(Led, state);
+
   Serial.print(state);
-  digitalWrite(Led, state); //turns LED on/off
+  Serial.print("   ");
+  Serial.println(counter/2);
 }
 
 void Read() {
-  state = !state; //makes things different than eachother
+  state = !state; //Makes state unequal
+  counter++;
+
 }
 ```
 #### Reflection:
