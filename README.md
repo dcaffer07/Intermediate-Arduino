@@ -52,4 +52,45 @@ void loop() {
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
 
-https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png
+
+### LCD Backpack
+#### Description:
+> Fist, dsiplay "Hello World" on a Liquid Crystal.  Next add additioanl wiring and a button display a counter which increaases as a button is clicked, showing the amount of clicks.  This assigment will further develop and expand our knowledge and increase our capability in arduino.
+#### Wriring 
+> Very straight forward, simply connect the photointerupye.
+<img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png" alt="wiring2" style="width:450px;">
+
+Image credit goes to [Physicalcomputing.com](https://uwearduino.wordpress.com/2018/02/13/photo-interrupt-sensor-module-week-1/)
+
+#### Code (worked w/ Cooper Moreland)
+
+```C++
+ 
+int Led = 12;
+int photo = 4;
+int photostate = 0;
+int val;
+volatile byte state = LOW;
+
+void setup() {
+  pinMode(Led, OUTPUT);
+  pinMode(photo, INPUT_PULLUP);    //discver pins for outputing/inputting
+  Serial.begin(9600);           //attach serial moter
+  attachInterrupt(digitalPinToInterrupt(photo), Read, CHANGE);   //disrupts.  causing LED to initiate
+}
+
+void loop() {
+  Serial.print(state);
+  digitalWrite(Led, state); //turns LED on/off
+}
+
+void Read() {
+  state = !state; //makes things different than eachother
+}
+```
+#### Reflection:
+> This assignemnt was very productive as it allowed for the introduction of new things with the incorporation of old things.  With that being said, some takaways...
+> - Set LCD to correct brightness so that it looks clean when displayed.
+> - Post projects, don't waste time on making wiring diagrams find someone elses.
+> 
+> All in all I enjoyed this assignment and look forward to more like it in the future.
