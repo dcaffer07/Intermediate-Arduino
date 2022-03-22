@@ -1,6 +1,8 @@
 # Intermediate-Arduino
 ### Table of Contents
 [LCD Backpack](https://github.com/dcaffer07/Intermediate-Arduino/blob/main/README.md#intermediate-arduino)
+[Photointerrupter](https://github.com/dcaffer07/Intermediate-Arduino/blob/main/README.md#photointerrupters)
+
 
 
 ### LCD Backpack
