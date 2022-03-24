@@ -110,7 +110,7 @@ void Read() {
 > Make a motor control operate according to the state of a poitentiometer which has been attatched as well to a battery pack and arduino.
 #### Wriring 
 > Very straight forward, simply connect a potentiometer to a motor and a AA batery pack.
-<img src="https://hacksterio.s3.amazonaws.com/uploads/image_file/file/54009/control%20dc%20motor%20with%20arduino%20and%20pot_bb.png" alt="wiring2" style="width:450px;">
+<img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(21).png?raw=true" alt="wiring2" style="width:450px;">
 
 Image credit goes to [Arduino.cc](https://create.arduino.cc/projecthub/ben/motor-controlled-with-arduino-553c11)
 
