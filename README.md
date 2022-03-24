@@ -4,6 +4,7 @@
 
 [Photointerrupter](https://github.com/dcaffer07/Intermediate-Arduino/blob/main/README.md#photointerrupters)
 
+[Motor Control](https://github.com/dcaffer07/Intermediate-Arduino/blob/main/README.md#motor-control)
 
 
 ### LCD Backpack
