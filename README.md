@@ -105,25 +105,25 @@ void Read() {
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
 
-### Photointerrupters
+### Motor Control
 #### Description:
-> Fist, make an LED turn on when an object is put between the legs of the photointerupter.  Next, add a counter to the serial moniter so that it tells you the number of times that the LED has been turned on.  Overall we want to expand our coding knowledge and futher our skills.
+> Make a motor control operate according to the state of a poitentiometer which has been attatched as well to a battery pack and arduino.
 #### Wriring 
-> Very straight forward, simply connect the photointerupter to an LED so that a light is initialized with an interuption.
-<img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png" alt="wiring2" style="width:450px;">
+> Very straight forward, simply connect a potentiometer to a motor and a AA batery pack.
+<img src="https://hacksterio.s3.amazonaws.com/uploads/image_file/file/54009/control%20dc%20motor%20with%20arduino%20and%20pot_bb.png" alt="wiring2" style="width:450px;">
 
-Image credit goes to [Physicalcomputing.com](https://uwearduino.wordpress.com/2018/02/13/photo-interrupt-sensor-module-week-1/)
+Image credit goes to [Arduino.cc](https://create.arduino.cc/projecthub/ben/motor-controlled-with-arduino-553c11)
 
-#### Code (worked w/ Cooper Moreland)
+#### Code (worked w/ Cooper Moreland (comments are my own))
 
 ```C++
  
-int pwmPin = 12; // assigns pin 12 to variable pwm
-int pot = A0; // assigns analog input A0 to variable pot
-int c1 = 0;   // declares variable c1
-int c2 = 0;   // declares variable c2
+int pwmPin = 9; // provides pin w connections and destination
+int pot = A0; // analog -> A0
+int c1 = 0;   // variable c1
+int c2 = 0;   // variable c2
 
-void setup() { // setup loop
+void setup() { // generate loop
   Serial.begin(9600);
   pinMode(pwmPin, OUTPUT); 
   pinMode(pot, INPUT);  
@@ -131,12 +131,12 @@ void setup() { // setup loop
 
 void loop() {
   c2 = analogRead(pot); 
-  c1 = 1024-c2;         // subtracts c2 from 1000 ans saves the result in c1
+  c1 = 1024-c2;         // 1000 - c2 = c1
   digitalWrite(pwmPin, HIGH); 
   delayMicroseconds(c1);   
   digitalWrite(pwmPin, LOW);  
   delayMicroseconds(c2);  
-    Serial.println (c2);
+    Serial.println (c2); print this sucker
 }
 ```
 #### Reflection:
