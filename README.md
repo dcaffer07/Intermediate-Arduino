@@ -107,7 +107,7 @@ void Read() {
 
 ### Motor Control
 #### Description:
-> Make a motor control operate according to the state of a poitentiometer which has been attatched as well to a battery pack and arduino.
+> Make a motor control operate according to the state of a potentiometer which has been attatched to a battery pack and arduino.
 #### Wriring 
 > Very straight forward, simply connect a potentiometer to a motor and a AA batery pack.
 <img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(21).png?raw=true" alt="wiring2" style="width:450px;">
@@ -140,9 +140,9 @@ void loop() {
 }
 ```
 #### Reflection:
-> This assignemnt was very productive as it allowed for the introduction of new things with the incorporation of old things.  With that being said, some takaways...
-> - Read directions so that you know what to do for the assignemnt.  I found that to be very helpfull.
-> - Don't add unnessecary delays because they are stupid and unhelpful.
-> - Make sure that code is written periodically and make sure that pins are connectred to the correct places.
+> This assignemnt was funm because we have never used a motor or battery pack like this, and so it was fun to incorporate them.  With that being said, some takaways...
+> - When things are not working, display the state of what is being powered on the serial monitor.
+> - If wiring is complicated, use as small of waires as possible for cleanliness purposes.
+> - Attatch tape to your motor to see it functioning more clearly!
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
