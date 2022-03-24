@@ -104,3 +104,45 @@ void Read() {
 > - Make sure that code is written periodically and make sure that pins are connectred to the correct places.
 > 
 > All in all I enjoyed this assignment and look forward to more like it in the future.
+
+### Photointerrupters
+#### Description:
+> Fist, make an LED turn on when an object is put between the legs of the photointerupter.  Next, add a counter to the serial moniter so that it tells you the number of times that the LED has been turned on.  Overall we want to expand our coding knowledge and futher our skills.
+#### Wriring 
+> Very straight forward, simply connect the photointerupter to an LED so that a light is initialized with an interuption.
+<img src="https://github.com/dcaffer07/Intermediate-Arduino/blob/main/media/Screenshot%20(19).png" alt="wiring2" style="width:450px;">
+
+Image credit goes to [Physicalcomputing.com](https://uwearduino.wordpress.com/2018/02/13/photo-interrupt-sensor-module-week-1/)
+
+#### Code (worked w/ Cooper Moreland)
+
+```C++
+ 
+int pwmPin = 12; // assigns pin 12 to variable pwm
+int pot = A0; // assigns analog input A0 to variable pot
+int c1 = 0;   // declares variable c1
+int c2 = 0;   // declares variable c2
+
+void setup() { // setup loop
+  Serial.begin(9600);
+  pinMode(pwmPin, OUTPUT); 
+  pinMode(pot, INPUT);  
+}
+
+void loop() {
+  c2 = analogRead(pot); 
+  c1 = 1024-c2;         // subtracts c2 from 1000 ans saves the result in c1
+  digitalWrite(pwmPin, HIGH); 
+  delayMicroseconds(c1);   
+  digitalWrite(pwmPin, LOW);  
+  delayMicroseconds(c2);  
+    Serial.println (c2);
+}
+```
+#### Reflection:
+> This assignemnt was very productive as it allowed for the introduction of new things with the incorporation of old things.  With that being said, some takaways...
+> - Read directions so that you know what to do for the assignemnt.  I found that to be very helpfull.
+> - Don't add unnessecary delays because they are stupid and unhelpful.
+> - Make sure that code is written periodically and make sure that pins are connectred to the correct places.
+> 
+> All in all I enjoyed this assignment and look forward to more like it in the future.
